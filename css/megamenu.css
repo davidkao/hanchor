@@ -1,0 +1,333 @@
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+megamenu.js STYLE STARTS HERE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Screen style's
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.menu-container {
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.menu ul.layer-1-ul,.login-signup ul.layer-1-ul{
+    margin: 0 auto;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+
+    /* IF .menu position=relative -> ul = container width, ELSE ul = 100% width */
+    box-sizing: border-box;
+}
+
+.menu ul.layer-1-ul:before,
+.menu ul.layer-1-ul:after {
+    content: "";
+    display: table;
+}
+
+.menu ul.layer-1-ul:after {
+    clear: both;
+}
+
+.menu li.layer-1-li,.login-signup li.layer-1-li {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.menu .layer-1,.login-signup .layer-1{
+    text-decoration: none;
+    display: block;
+	font-size:14px;color:#fff;font-weight:normal;height:95px;padding: 0 30px;line-height:95px;
+	transition:0.22s;
+	position:relative;
+}
+.login-signup .layer-1{font-size:13px;color:#999;padding:0 25px;}
+
+.login-signup .layer-1.btn-signup{
+	margin-top:27px;
+	font-size:14px;
+	height:40px;
+	line-height:40px;
+	color:#2275d7;
+	font-weight:bold;
+	display:inline-block;
+	padding:0 30px;
+	border-radius: 30px;
+	border:none;
+	outline:none;
+	cursor: pointer;
+	border:1px solid #2275d7;
+	box-sizing: border-box;
+}
+
+.login-signup .layer-1.scart{}
+.login-signup .layer-1.scart img{display:inline-block;vertical-align: middle;margin-right:6px;margin-top:-4px;}
+.login-signup .layer-1.scart h2{background:#1d3866;color:#fff;vertical-align: middle;display:inline-block;transition:0.2s;line-height:25px;width:25px;height:25px;text-align:center;}
+.login-signup .layer-1.scart:hover{background:#151515;}
+.login-signup .layer-1.scart:hover h2{color:#fff;background:#1f60cb;}
+
+.login-signup .layer-1.member{}
+.login-signup .layer-1.member .pic{width:40px;height:40px;overflow:hidden;border-radius: 20px;margin-right:8px;transition:0.22s;}
+.login-signup .layer-1.member .name{font-size:14px;color:#9b9b9b;position:relative;margin-right:24px;transition:0.22s;}
+.login-signup .layer-1.member .name:after{
+	content:"";
+	position:absolute;
+	width: 0; 
+	height: 0; 
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #9b9b9b;
+	right:-20px;
+	top:18px;
+}
+
+.login-signup .layer-1.member .name.close:after{
+	border-bottom: 6px solid #9b9b9b;
+	border-top:none;
+}
+
+.login-signup .layer-1.member:hover .pic{}
+.login-signup .layer-1.member:hover .name{color:#2275d7;}
+.login-signup .layer-1.member:hover .name:after{border-top-color:#2275d7;}
+.login-signup .layer-1.member:hover .name.close:after{border-bottom-color:#2275d7;}
+
+.login-signup .layer-1.btn-signup:hover,.login-signup li.layer-1-li.active .layer-1.btn-signup{background:#2275d7;color:#fff !important;}
+
+.menu .layer-1 h2,.login-signup .layer-1 h2{position:relative;}
+
+.menu li.layer-1-li:hover .layer-1,.menu li.layer-1-li.active .layer-1,.login-signup li.layer-1-li:hover .layer-1,.login-signup li.layer-1-li.active .layer-1{color:#3b84fb}
+
+.menu ul.layer-2-ul {
+    display: none;
+    width: 100%;
+    background: #fff;
+    padding: 0;
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+	border-bottom:1px solid #bbb;
+}
+
+.menu ul.layer-2-ul:before,
+.menu ul.layer-2-ul:after {
+    content: "";
+    display: table;
+}
+
+.menu ul.layer-2-ul:after {
+    clear: both;
+}
+
+.menu li.layer-2-li{
+    padding-bottom: 0;
+	margin-right:20px;
+    list-style: none;
+    width: auto;
+    background: none;
+    float: left;
+	text-align:center;
+}
+
+.menu .layer-2 {
+    color: #777;
+    display: block;
+	font-size:15px;
+	font-weight:bold;
+	color:#666;
+}
+
+.menu .layer-2 a{color:#666; padding: 35px 10px;display:block;}
+.menu .layer-2 a:hover{color:#aaa;}
+
+.menu .layer-2 .ico{margin-bottom:10px;}
+
+.menu .layer-2-adj{}
+
+.menu ul.layer-3-ul {
+    display: block;
+    padding: 10px 0 30px;
+    list-style: none;
+    box-sizing: border-box;
+	
+}
+
+.menu ul.layer-3-ul:before,
+.menu ul.layer-3-ul:after {
+    content: "";
+    display: table;
+}
+
+.menu ul.layer-3-ul:after {
+    clear: both;
+}
+
+.menu li.layer-3-li{
+    margin: 0;
+    font-size: .8em;
+}
+
+.menu .layer-3 {
+    border: 0;
+	display:block;
+	width:100%;
+}
+.menu .layer-3 h4{
+	font-size:15px;
+	line-height:25px;
+	padding:10px 0;
+	color:#999;
+	display:block;
+	position:relative;
+	}
+.menu .layer-3:hover h4{color:#333;}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Mobile style's
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+@media screen and (min-width: 1200px) {
+	header .fixarea .fxarea-rwd{width:1160px;margin:0 auto;display:block;overflow:hidden;padding:0 20px;}
+	.layer-1-li .menu-line:after{content:"";position:absolute;background:url(../images/common/menu-line.jpg) no-repeat;display:block;width:1px;height:95px;top:0;right:0;}
+	.layer-1-li:nth-last-child(1) .menu-line:after{display:none;}
+	.menu .layer-2-adj{width:1200px;margin:0 auto;}
+	}
+
+@media only screen and (max-width: 1199px) {
+	
+	
+	.menu ul.layer-1-ul{
+		margin: 0 auto;
+	}
+	
+    .menu-container {
+        width: 100px;
+    }
+    .menu-mobile {
+		float:right;
+        display: block;
+		height:95px;
+		cursor:pointer;
+		position:relative;
+    }
+	.menu-mobile:after {
+		width:100px;
+		height:95px;
+		content: "";
+		background:url(../images/common/menu.png) no-repeat center center;
+		display:block;
+		position:absolute;
+		right:0;
+		top:0;
+	}
+	
+	.menu-mobile.close:after {
+		width:100px;
+		height:95px;
+		content: "";
+		background:url(../images/common/menu-close.png) no-repeat center center;
+		display:block;
+		position:absolute;
+		right:0;
+		top:;
+	}
+	
+    .menu-dropdown-icon:before {
+        display: block;
+    }
+    .menu ul.layer-1-ul {
+        display: none;
+    }
+    .menu li.layer-1-li {
+        width: 100%;
+        float: none;
+        display: block;
+	
+    }
+    .menu .layer-1 {
+        padding:20px 0;
+		line-height:20px;
+		height:auto;
+        width: 100%;
+        display: block;
+		box-sizing:border-box;
+		-webkit-box-sizing:border-box;
+		text-align:center;
+		color:#9b9b9b;
+		font-weight:bold;
+    }
+	.menu .layer-1 h2{display:inline-block;}
+	.menu .layer-1 h2:before{content:"";background:url(../images/common/menu_dot.png) no-repeat ;width:10px;height:10px;position:absolute;left:-15px;top:6px;}
+	.menu .layer-1:hover{color:#2275d7;}
+	.menu li.layer-1-li:hover .layer-1{
+	border-bottom:none;
+	}
+	.menu .layer-2 a{padding:22px 0;}
+	.menu .layer-2-ul{
+		border-bottom:none;
+		padding:15px 0;
+		/*max-height:220px;*/
+		overflow:auto;
+		}
+	.menu .layer-2-adj{float:none;}
+	.menu ul.layer-2-ul {
+        position: relative;
+		background:#eee;
+		border-top:1px solid #bbb;
+    }
+    .menu li.layer-2-li {
+        float: none;
+        width: 100%;
+		padding:0;
+		border-bottom:1px solid #ddd;
+    }
+    .menu li.layer-2-li:first-child {
+        margin: 0;
+    }
+    .menu ul.layer-3-ul {
+        position: relative;
+    }
+    .menu li.layer-3-li {
+        float: none;
+    }
+	.menu .layer-3 h4{padding:6px 0;font-size:14px;line-height:24px;}
+    .menu ul.layer-1-ul.show-on-mobile {
+		width:100%;
+		z-index:1000;
+        display: block;
+		position:absolute;
+		background:#fff;
+		right:0;
+		top:121px;
+		border-bottom:1px #bbb solid;
+    }
+}
+
+@media screen and (max-width: 767px) {
+	.login-signup ul.layer-1-ul {margin:0;overflow:hidden;text-align:right;}	
+	.menu ul.layer-1-ul.show-on-mobile{top:187px;}
+	.login-signup li.layer-1-li{float:none;display:inline-block;}
+	.login-signup .layer-1{float:none;display:inline-block;padding:0 20px;}
+	.login-signup .layer-1.btn-signup{margin-top:0;}
+	.login-signup .layer-1{height:40px;line-height:40px;color:#9b9b9b;}
+	.menu .layer-1{color:#9b9b9b;font-weight:bold;}
+	
+	.login-signup .layer-1.btn-signup{border:none;color:#9b9b9b;padding:0 20px;background:none;}
+	.login-signup .layer-1.btn-signup:hover,.login-signup li.layer-1-li.active .layer-1.btn-signup{background:none;color:#2275d7 !important;}
+	
+	.login-signup .layer-1.member .pic{width:30px;height:30px;}
+	
+	.login-signup .layer-1.scart h2{background:#1d3866;color:#fff;vertical-align: middle;display:inline-block;transition:0.2s;line-height:25px;width:25px;height:25px;text-align:center;margin-top:-5px;}
+	.login-signup .layer-1.scart:hover{background:#151515;}
+	.login-signup .layer-1.scart:hover h2{color:#fff;background:#1f60cb;}
+}
