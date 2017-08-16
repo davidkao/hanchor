@@ -312,7 +312,8 @@
 	.member-sec .pay-radio{width:20px;}
 	.member-sec .pay-text{width:calc(100% - 40px);}
 	
-	.input-form .one-input .title{text-align:left;}
+	.input-form .one-input .title{width:100%;text-align:left;margin-right:0;}
+	.input-form .one-input .input{width:100%;}
 	.input-form .one-input .input input, .input-form .one-input .input textarea{width:100%;min-width:120px;}
 	
 	.contact-form .input-textarea{width:100%;height:164px;}

@@ -169,6 +169,7 @@ Mobile style's
 	.grid3-21.grid-3-1{width:calc(33.333% - 40px);margin:0 20px;}
 	.sidebar-con .grid-4-1{width:160px;margin:0 20px;}
 	.sidebar-con .grid-4-3{width:calc(100% - 240px);margin:0 20px;}
+	.grid-800px{width:660px;margin:0 auto;}
 	
 }
 
