@@ -35,6 +35,7 @@ Screen style's
     clear: both;
 }
 
+.menu li.layer-1-li{position:relative;}
 .menu li.layer-1-li,.login-signup li.layer-1-li {
     float: left;
     padding: 0;
@@ -48,6 +49,9 @@ Screen style's
 	transition:0.22s;
 	position:relative;
 }
+
+.menu li.layer-1-li .nav-drop{position:absolute;background:#fff;z-index: 999;}
+
 .login-signup .layer-1{font-size:13px;color:#999;padding:0 25px;}
 
 .login-signup .layer-1.btn-signup{
@@ -130,11 +134,9 @@ Screen style's
 
 .menu li.layer-2-li{
     padding-bottom: 0;
-	margin-right:20px;
     list-style: none;
-    width: auto;
+    width: 100%;
     background: none;
-    float: left;
 	text-align:center;
 }
 
@@ -182,14 +184,15 @@ Screen style's
 	width:100%;
 }
 .menu .layer-3 h4{
-	font-size:15px;
-	line-height:25px;
+	font-size:13px;
+	line-height:22px;
 	padding:10px 0;
 	color:#999;
 	display:block;
 	position:relative;
+	width:100%;
 	}
-.menu .layer-3:hover h4{color:#333;}
+.menu .layer-3:hover h4{color:#333;background:#eee;}
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
 Mobile style's
@@ -197,10 +200,14 @@ Mobile style's
 
 
 @media screen and (min-width: 1200px) {
-	header .fixarea .fxarea-rwd{width:1160px;margin:0 auto;display:block;overflow:hidden;padding:0 20px;}
+	header .fixarea .fxarea-rwd{width:1160px;margin:0 auto;display:block;height:94px;padding:0 20px;}
 	.layer-1-li .menu-line:after{content:"";position:absolute;background:url(../images/common/menu-line.jpg) no-repeat;display:block;width:1px;height:95px;top:0;right:0;}
 	.layer-1-li:nth-last-child(1) .menu-line:after{display:none;}
 	.menu .layer-2-adj{width:1200px;margin:0 auto;}
+	.menu ul.layer-2-ul{width:100%;top:95px;background:#0d0d0e;border-bottom:none;}
+	.menu .layer-3:hover h4{color:#3b84fb;background:#000;}
+	
+	
 	}
 
 @media only screen and (max-width: 1199px) {
@@ -314,8 +321,10 @@ Mobile style's
 }
 
 @media screen and (max-width: 767px) {
+	header .menu-container{height:60px;}
+	.menu-mobile,.menu-mobile:after,.menu-mobile.close:after{height:60px;}
 	.login-signup ul.layer-1-ul {margin:0;overflow:hidden;text-align:right;}	
-	.menu ul.layer-1-ul.show-on-mobile{top:187px;}
+	.menu ul.layer-1-ul.show-on-mobile{top:auto;}
 	.login-signup li.layer-1-li{float:none;display:inline-block;}
 	.login-signup .layer-1{float:none;display:inline-block;padding:0 20px;}
 	.login-signup .layer-1.btn-signup{margin-top:0;}
@@ -330,4 +339,6 @@ Mobile style's
 	.login-signup .layer-1.scart h2{background:#1d3866;color:#fff;vertical-align: middle;display:inline-block;transition:0.2s;line-height:25px;width:25px;height:25px;text-align:center;margin-top:-5px;}
 	.login-signup .layer-1.scart:hover{background:#151515;}
 	.login-signup .layer-1.scart:hover h2{color:#fff;background:#1f60cb;}
+	
+	
 }

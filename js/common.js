@@ -33,7 +33,7 @@ $(document).ready(function(){
 	//menu scrolling
 	$(window).scroll(function() {
 		var windscroll = $(window).scrollTop();
-		if (windscroll >= 200) {
+		if (windscroll >= 400) {
 			$('header .fixarea').addClass('headerfix');
 		} else {
 			$('header .fixarea').removeClass('headerfix');
@@ -48,13 +48,37 @@ $(document).ready(function(){
 	//login bg get height
 	$('.login-bg').height($(".index-content").height());
 	
+	//init wow
+	new WOW().init();
+	
+	//rwd tab
+	if ($(window).width() < 768) {
+		$('.tab').addClass('rwd-tab');
+	}
+	else{
+		$('.tab').removeClass('rwd-tab');
+	}
+	
+	$(".tab").click(function (e) {
+        
+		$(this).find('.rwd-tab-show').fadeToggle(150);
+		e.preventDefault();
+        
+    });
+	
+	
 	$(window).resize(function() {
 		$('.v-centerimg').centerImage();
 		$('.v-centerimg-is').centerImage('inside');
 		$('.login-bg').height($(".index-content").height());
+		
+		if ($(window).width() < 768) {
+			$('.tab').addClass('rwd-tab');
+		}
+		else{
+			$('.tab').removeClass('rwd-tab');
+		}
+		
 	});
 	
-	//init wow
-	new WOW().init();
-						   
 });

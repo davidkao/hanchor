@@ -25,10 +25,10 @@ $(window).ready(function(){// By YHK
 	function anchorttopsize(){
 		var val;
 		if($(window).width()>=1200){
-			val = 0;
+			val = 406;
 		}
 		else if($(window).width()>=768 && $(window).width() < 1200){
-			val = 0;
+			val = 406;
 			}
 		else if($(window).width() < 768){
 			val = 0;
