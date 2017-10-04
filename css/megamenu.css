@@ -72,7 +72,7 @@ Screen style's
 }
 
 .login-signup .layer-1.scart{}
-.login-signup .layer-1.scart img{display:inline-block;vertical-align: middle;margin-right:6px;margin-top:-4px;}
+.login-signup .layer-1.scart img{display:inline-block;vertical-align: middle;margin-right:6px;margin-top:-4px;width:24px;}
 .login-signup .layer-1.scart h2{background:#1d3866;color:#fff;vertical-align: middle;display:inline-block;transition:0.2s;line-height:25px;width:25px;height:25px;text-align:center;}
 .login-signup .layer-1.scart:hover{background:#151515;}
 .login-signup .layer-1.scart:hover h2{color:#fff;background:#1f60cb;}
@@ -193,6 +193,8 @@ Screen style's
 	width:100%;
 	}
 .menu .layer-3:hover h4{color:#333;background:#eee;}
+
+.h-msg-r-mobile{display:none;}
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
 Mobile style's
@@ -321,14 +323,14 @@ Mobile style's
 }
 
 @media screen and (max-width: 767px) {
-	header .menu-container{height:60px;}
-	.menu-mobile,.menu-mobile:after,.menu-mobile.close:after{height:60px;}
+	header .menu-container{height:52px;}
+	.menu-mobile,.menu-mobile:after,.menu-mobile.close:after{height:52px;}
 	.login-signup ul.layer-1-ul {margin:0;overflow:hidden;text-align:right;}	
 	.menu ul.layer-1-ul.show-on-mobile{top:auto;}
 	.login-signup li.layer-1-li{float:none;display:inline-block;}
-	.login-signup .layer-1{float:none;display:inline-block;padding:0 20px;}
+	.login-signup .layer-1{float:none;display:inline-block;padding:0 12px;}
 	.login-signup .layer-1.btn-signup{margin-top:0;}
-	.login-signup .layer-1{height:40px;line-height:40px;color:#9b9b9b;}
+	.login-signup .layer-1{height:30px;line-height:30px;color:#9b9b9b;}
 	.menu .layer-1{color:#9b9b9b;font-weight:bold;}
 	
 	.login-signup .layer-1.btn-signup{border:none;color:#9b9b9b;padding:0 20px;background:none;}
@@ -336,9 +338,9 @@ Mobile style's
 	
 	.login-signup .layer-1.member .pic{width:30px;height:30px;}
 	
-	.login-signup .layer-1.scart h2{background:#1d3866;color:#fff;vertical-align: middle;display:inline-block;transition:0.2s;line-height:25px;width:25px;height:25px;text-align:center;margin-top:-5px;}
+	.login-signup .layer-1.scart img{width:20px;height:20px;margin-right:3px;}
+	.login-signup .layer-1.scart h2{background:#1d3866;color:#fff;vertical-align: middle;display:inline-block;transition:0.2s;line-height:20px;width:20px;height:20px;text-align:center;margin-top:-5px;}
 	.login-signup .layer-1.scart:hover{background:#151515;}
 	.login-signup .layer-1.scart:hover h2{color:#fff;background:#1f60cb;}
-	
 	
 }

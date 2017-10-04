@@ -67,6 +67,14 @@ $(document).ready(function(){
     });
 	
 	
+	$(".currency-now").click(function (e) {
+        
+		$(this).parent().find('.drop').fadeToggle(150);
+		e.preventDefault();
+        
+    });
+	
+	
 	$(window).resize(function() {
 		$('.v-centerimg').centerImage();
 		$('.v-centerimg-is').centerImage('inside');

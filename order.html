@@ -32,6 +32,7 @@
 	<link rel="stylesheet" href="css/flexslider.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	
 </head>
@@ -102,8 +103,74 @@
 					
 						<ul class="layer-1-ul">
 							
+							<!---->
+							<div class="h-msg-r-mobile clearfix">
+
+								<!--貨幣轉換-->
+								<div class="currency-sel mg-r-15">
+									<div class="currency-now">NTD<i class="fa fa-caret-down mg-l-10" aria-hidden="true"></i></div>
+									<div class="drop">
+										<a href="#" class="active">NTD</a>
+										<a href="#">USD</a>
+										<a href="#">JPY</a>
+									</div>
+								</div>
+								<!--貨幣轉換-->
+
+								<div class="lan-sel"><a href="#" class="active">中文</a> / <a href="#">EN</a></div>
+
+							</div>
+							<!---->
+							
 							<li class="layer-1-li"><a href="about.html" class="layer-1 menu-line"><h2>關於我們</h2></a></li>
-							<li class="layer-1-li"><a href="product.html" class="layer-1 menu-line"><h2>產品</h2></a></li>
+							
+							<li class="layer-1-li">
+								<div class="layer-1 menu-line"><h2>產品<i class="fa fa-angle-down mg-l-10" aria-hidden="true"></i></h2></div>
+								
+								<!--Product dropdown-->
+								<ul class="layer-2-ul">
+
+										<!--product kind-->
+										<li class="layer-2-li">
+											<a href="product.html" class="layer-3"><h4>包款</h4></a>
+										</li>
+										<!--product kind-->
+										
+										<!--product kind-->
+										<li class="layer-2-li">
+											<a href="product.html" class="layer-3"><h4>配件</h4></a>
+										</li>
+										<!--product kind-->
+										
+										<!--product kind-->
+										<li class="layer-2-li">
+											<a href="product.html" class="layer-3"><h4>衣著</h4></a>
+										</li>
+										<!--product kind-->
+										
+										<!--product kind-->
+										<li class="layer-2-li">
+											<a href="product.html" class="layer-3"><h4>其他</h4></a>
+										</li>
+										<!--product kind-->
+										
+										<!--product kind-->
+										<li class="layer-2-li">
+											<a href="product.html" class="layer-3"><h4>客製化</h4></a>
+										</li>
+										<!--product kind-->
+										
+										<!--product kind-->
+										<li class="layer-2-li">
+											<a href="product.html" class="layer-3"><h4>限量優惠</h4></a>
+										</li>
+										<!--product kind-->
+
+								</ul>
+								<!--Product dropdown-->
+								
+							</li>
+							
 							<li class="layer-1-li"><a href="blog.html" class="layer-1 menu-line"><h2>部落格</h2></a></li>
 							<li class="layer-1-li"><a href="contact.html" class="layer-1 menu-line"><h2>聯絡我們</h2></a></li>
 							
@@ -198,27 +265,109 @@
 									
 								</tr>
 								
-								<tr>
-									<td data-th="訂單號">123456789</td>
-									<td data-th="下單日期">2017/08/18</td>
-									<td data-th="狀態">訂單確認</td>
-									<td data-th="運送方式">國內寄送</td>
-									<td data-th="付款方式">轉帳</td>
-									<td data-th="金額">NT$ 3770</td>
-									<td data-th="付款確認"><button class="btn btn-s btn-lblue" hov="0.75">通知匯款</button></td>
+								<tr class="open-popup-link-tr">
+									<td href="#trpop-2"  class="open-popup-link" data-th="訂單號">123456789</td>
+									<td href="#trpop-2"  class="open-popup-link" data-th="下單日期">2017/08/18</td>
+									<td href="#trpop-2"  class="open-popup-link" data-th="狀態">訂單確認</td>
+									<td href="#trpop-2"  class="open-popup-link" data-th="運送方式">國內寄送國內寄送國內寄送國內寄送國內寄送國內寄送國內寄送國內寄送國內寄送國內寄送國內寄送國內寄送國內寄送國內寄送國內寄送國內寄送國內寄送</td>
+									<td href="#trpop-2"  class="open-popup-link" data-th="付款方式">轉帳</td>
+									<td href="#trpop-2"  class="open-popup-link" data-th="金額">NT$ 3770</td>
+									<td data-th="付款確認"><button href="#trpop-2-form" class="btn btn-s btn-lblue open-popup-link" hov="0.75">通知匯款</button></td>
 									
 								</tr>
 								
-								<tr>
-									<td data-th="訂單號">123456789</td>
-									<td data-th="下單日期">2017/08/18</td>
-									<td data-th="狀態">訂單確認</td>
-									<td data-th="運送方式">國內寄送</td>
-									<td data-th="付款方式">轉帳</td>
-									<td data-th="金額">NT$ 3770</td>
-									<td data-th="付款確認"><button class="btn btn-s btn-lblue" hov="0.75">通知匯款</button></td>
+								<!-- Popup itself -->
+								<div id="trpop-2" class="white-popup mfp-hide">
+									
+									<h3 class="text-24 lh-40 color-gray-333 bold mg-b-20">訂單明細</h3>
+									
+									<div>
+										<p class="text-14 lh-24 color-gray-666 mg-b-10"><span class="bold">姓名：</span>高毅軒</p>
+										<p class="text-14 lh-24 color-gray-666 mg-b-10"><span class="bold">Email：</span>david8018d@gmail.com</p>
+										<p class="text-14 lh-24 color-gray-666 mg-b-10"><span class="bold">電話：</span>0912345678</p>
+										<p class="text-14 lh-24 color-gray-666 mg-b-10"><span class="bold">寄送地址：</span>台北市大同區哈密街59巷38弄7號4樓-2</p>
+										<p class="text-14 lh-24 color-gray-666 mg-b-10"><span class="bold">標題：</span>內容</p>
+										<p class="text-14 lh-24 color-gray-666 mg-b-10"><span class="bold">標題：</span>內容</p>
+										<p class="text-14 lh-24 color-gray-666 mg-b-10"><span class="bold">標題：</span>內容</p>
+										<p class="text-14 lh-24 color-gray-666 mg-b-10"><span class="bold">標題：</span>內容</p>
+										<p class="text-14 lh-24 color-gray-666 mg-b-10"><span class="bold">標題：</span>內容</p>
+										<p class="text-14 lh-24 color-gray-666 mg-b-10"><span class="bold">標題：</span>內容</p>
+										<p class="text-14 lh-24 color-gray-666 mg-b-10"><span class="bold">標題：</span>內容</p>
+										<p class="text-14 lh-24 color-gray-666 mg-b-10"><span class="bold">標題：</span>內容</p>
+									</div>
+								</div>
+								<!-- Popup itself -->
+								
+								<!-- Popup itself -->
+								<div id="trpop-2-form" class="white-popup mfp-hide">
+									
+									<h3 class="text-24 lh-40 color-gray-333 bold mg-b-20">通知匯款</h3>
+									<p class="text-14 lh-24 bold color-gray-999 mg-b-20">請填寫您的 ATM 轉帳資料</p>
+									<div class="order-confirmbtn-sec"><input type="text" class="input-text mg-b-20" placeholder="銀行名稱" /></div>
+									<div class="order-confirmbtn-sec"><input type="text" class="input-text mg-b-20" placeholder="帳號末五碼" /></div>
+									<div class="order-confirmbtn-sec"><input type="text" class="input-text mg-b-20" placeholder="戶名" /></div>
+									
+									<div class="scart-submit">
+								
+										<button class="btn-s btn-lblue inlineblock-imp mg-r-10 m-close" hov="0.75">取消</button>
+										<button class="btn-s btn-blue inlineblock-imp m-close" hov="0.75">確定</button>
+
+									</div>
+									
+								</div>
+								<!-- Popup itself -->
+								
+								<tr class="open-popup-link-tr">
+									<td href="#trpop-1"  class="open-popup-link" data-th="訂單號">123456789</td>
+									<td href="#trpop-1"  class="open-popup-link" data-th="下單日期">2017/08/18</td>
+									<td href="#trpop-1"  class="open-popup-link" data-th="狀態">訂單確認</td>
+									<td href="#trpop-1"  class="open-popup-link" data-th="運送方式">國內寄送國內寄送國內寄送國內寄送國內寄送國內寄送國內寄送國內寄送國內寄送國內寄送國內寄送國內寄送國內寄送國內寄送國內寄送國內寄送國內寄送</td>
+									<td href="#trpop-1"  class="open-popup-link" data-th="付款方式">轉帳</td>
+									<td href="#trpop-1"  class="open-popup-link" data-th="金額">NT$ 3770</td>
+									<td data-th="付款確認"><button href="#trpop-1-form" class="btn btn-s btn-lblue open-popup-link" hov="0.75">通知匯款</button></td>
 									
 								</tr>
+								
+								<!-- Popup itself -->
+								<div id="trpop-1" class="white-popup mfp-hide">
+									
+									<h3 class="text-24 lh-40 color-gray-333 bold mg-b-20">訂單明細</h3>
+									
+									<div>
+										<p class="text-14 lh-24 color-gray-666 mg-b-10"><span class="bold">姓名：</span>高毅軒</p>
+										<p class="text-14 lh-24 color-gray-666 mg-b-10"><span class="bold">Email：</span>david8018d@gmail.com</p>
+										<p class="text-14 lh-24 color-gray-666 mg-b-10"><span class="bold">電話：</span>0912345678</p>
+										<p class="text-14 lh-24 color-gray-666 mg-b-10"><span class="bold">寄送地址：</span>台北市大同區哈密街59巷38弄7號4樓-2</p>
+										<p class="text-14 lh-24 color-gray-666 mg-b-10"><span class="bold">標題：</span>內容</p>
+										<p class="text-14 lh-24 color-gray-666 mg-b-10"><span class="bold">標題：</span>內容</p>
+										<p class="text-14 lh-24 color-gray-666 mg-b-10"><span class="bold">標題：</span>內容</p>
+										<p class="text-14 lh-24 color-gray-666 mg-b-10"><span class="bold">標題：</span>內容</p>
+										<p class="text-14 lh-24 color-gray-666 mg-b-10"><span class="bold">標題：</span>內容</p>
+										<p class="text-14 lh-24 color-gray-666 mg-b-10"><span class="bold">標題：</span>內容</p>
+										<p class="text-14 lh-24 color-gray-666 mg-b-10"><span class="bold">標題：</span>內容</p>
+										<p class="text-14 lh-24 color-gray-666 mg-b-10"><span class="bold">標題：</span>內容</p>
+									</div>
+								</div>
+								<!-- Popup itself -->
+								
+								<!-- Popup itself -->
+								<div id="trpop-1-form" class="white-popup mfp-hide">
+									
+									<h3 class="text-24 lh-40 color-gray-333 bold mg-b-20">通知匯款</h3>
+									<p class="text-14 lh-24 bold color-gray-999 mg-b-20">請填寫您的 ATM 轉帳資料</p>
+									<div class="order-confirmbtn-sec"><input type="text" class="input-text mg-b-20" placeholder="銀行名稱" /></div>
+									<div class="order-confirmbtn-sec"><input type="text" class="input-text mg-b-20" placeholder="帳號末五碼" /></div>
+									<div class="order-confirmbtn-sec"><input type="text" class="input-text mg-b-20" placeholder="戶名" /></div>
+									
+									<div class="scart-submit">
+								
+										<button class="btn-s btn-lblue inlineblock-imp mg-r-10 m-close" hov="0.75">取消</button>
+										<button class="btn-s btn-blue inlineblock-imp m-close" hov="0.75">確定</button>
+
+									</div>
+									
+								</div>
+								<!-- Popup itself -->
 								
 							</table>
 							
@@ -296,10 +445,21 @@
 <script src="js/jquery.bxslider.js"></script>
 <script src="js/radiob.js"></script>
 <script src="js/jquery.nice-select.js"></script>
+<script src="js/jquery.magnific-popup.js"></script>
 <script src="js/megamenu.js"></script>
 <script src="js/common.js"></script>
 <script src="js/anchor.js"></script>
 
+<script>
+$('.open-popup-link').magnificPopup({
+  type:'inline',
+  midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+});
+	
+$('.m-close').on( "click", function() {
+  $.magnificPopup.close();
+});
+</script>
 
 
 </body>
