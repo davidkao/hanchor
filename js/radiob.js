@@ -23,6 +23,7 @@ onload = function() {
             l.onclick = turn_radio;
         };
     };
+	
 };
 var check_it = function() {
     var inp = gebtn(this,'input')[0];

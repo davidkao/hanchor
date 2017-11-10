@@ -1,25 +1,23 @@
 @charset "utf-8";
 
-.has-js .label-check,.has-js .label-radio {margin-right:10px;}
+.hide{display:none;}
+.has-js .label-check,.has-js .label-radio {}
 .has-js .label-radio{
 	width:28px;height:28px;display:inline-block;cursor:pointer;position: relative;
-	border-radius:20px;border: 5px solid #fff;box-sizing:border-box;
-	
+	border-radius:20px;border: 3px solid #fff;box-sizing:border-box;margin-right:5px;
 }
 .has-js label.c-on{ background: url(check-on.png) no-repeat; }
 /*.has-js label.r-on{background-image:url(../images/common/ico-check.png) !important;background-repeat: no-repeat !important;background-position:center center !important;}
 */
-
 .has-js label.r-on{
 	
 	-webkit-box-shadow: 0px 0px 3px 2px rgba(0,0,0,.4);
 	-moz-box-shadow:    0px 0px 3px 2px rgba(0,0,0,.4);
 	box-shadow:         0px 0px 3px 2px rgba(0,0,0,.4);
-	border: 3px solid #fff;
+	
 }
-
-
 .has-js .label-check input,.has-js .label-radio input { position: absolute; left: -9999px; }
+.label-radio .sel-color-text{bottom:-20px;width:auto;position:absolute;display:inline-block;min-width:3em;text-align:center;left:-50%;right:-50%;font-size:12px;color:#555;font-weight:bold;}
 
 .index-tab .left{float:left;}
 .index-tab .right{float:right;}
@@ -29,9 +27,10 @@
 	-moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2);
 	box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2);
 	margin-bottom:40px;
+	background:#fff;
 }
 .product-item.index-recommend-item{margin-bottom:40px;}
-.index-recommend-item .pic{width:100%;height:calc(1160px / 4 - 40px);}
+.index-recommend-item .pic{width:100%;height:calc(1160px / 4 - 40px);overflow:hidden;}
 .product-item.index-recommend-item .pic{height:calc(1160px / 3 - 40px);}
 .index-recommend-item .info{padding:13px;background:#fff;height:68px;}
 .index-recommend-item .info .name{}
@@ -250,9 +249,27 @@
 
 .contact-form .input-textarea{width:600px;height:164px;}
 .nice-select.nice-sel-wrap-up .list{bottom:100%;top:inherit;}
+.flex-sec{display:flex;flex-flow: row wrap;}
+.index-recommend-item.flex-4{display:block;margin:0 20px 30px 20px;flex:0 1 calc(25% - 40px);width:calc(25% - 40px);}
+.index-recommend-item.flex-4 .info{height:auto;}
+.index-recommend-item.flex-4 .pic{display:block;position:relative;width:100%;text-align:center;}
+
+
+.tooltip{
+	display:none;
+	position:absolute;
+	border:1px solid #333;
+	background-color:#161616;
+	border-radius:5px;
+	padding:10px;
+	color:#fff;
+	font-size:12px Arial;
+	z-index:2;
+}
 
 @media screen and (min-width: 1200px){
-	.tab-con .tab-inner{display:none;max-height:325px;overflow-x: scroll;}
+	.tab-con .tab-inner{display:none;max-height:325px;overflow-x: scroll;overflow-y: hidden;}
+	.tab-con .tab-inner.tab-inner-article{max-height:none;}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -293,10 +310,13 @@
 	.member-sec .order-table tr td:after{content:'';position:absolute;width:1px;height:24px;background:#ddd;left:86px;top:15px;display:block;}
 	.member-sec .order-table tr td:nth-child(1):after{top:30px;}
 	
-	.tab-con .tab-inner{display:none;max-height:325px;overflow-x: scroll;}
+	.tab-con .tab-inner{display:none;max-height:325px;overflow-x: scroll;overflow-y:hidden;}
+	.tab-con .tab-inner.tab-inner-article{max-height:none;}
 	
 	.grid-3-1.about-partner{width: calc(50% - 20px);height:300px;}
 	.grid-3-1.about-partner .pic{height:100%;}
+	
+	.index-recommend-item.flex-4{flex:0 1 calc(50% - 40px);width:calc(50% - 40px);}
 	
 }
 
@@ -400,6 +420,7 @@
 	.grid-3-1.about-partner{width:calc(50% - 20px);height:calc((100vw - 72px) / 2);}
 	.grid-3-1.about-partner .pic{height:100%;}
 	
+	.index-recommend-item.flex-4{flex:0 1 calc(50% - 16px);width:calc(50% - 16px);    margin: 0 8px 30px 8px;}
 	
 }
 
@@ -409,7 +430,7 @@
 }
 
 @media screen and (max-width: 480px) {
-	.index-news.grid-3-1{width:calc(100% - 16px);height:calc((100vw - 36px) * 0.35);background:#000;}
+	.index-news.grid-3-1,.index-news.blog-relative{width:calc(100% - 16px);height:calc((100vw - 36px) * 0.35);background:#000;}
 	
 	.index-news .pic{width:40%;display:inline-block;height:100%;}
 	.index-news .info{width:calc(60% - 30px);height:calc(100% - 30px);display:inline-block;background:#000;}

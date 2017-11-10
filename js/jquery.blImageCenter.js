@@ -44,7 +44,8 @@
         'width':      Math.round((div.r > img.r) ^ method ? '100%' : div.h / img.h * img.w),
         'height':     Math.round((div.r < img.r) ^ method ? '100%' : div.w / img.w * img.h)
       });
-
+	  	
+		
       // now center - but portrait images need to be centered slightly above halfway (33%)
       var div = { w: $div.width(), h: $div.height() };
       var img = { w: $img.width(), h: $img.height() };
@@ -53,6 +54,7 @@
         'left':     Math.round((div.w - img.w) / 2),
         'top':      Math.round((div.h - img.h) / 2)
       });
+		
 
       callbackWrapped(img)
     };

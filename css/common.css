@@ -68,6 +68,8 @@
 .bg-dbb{background:#27272a;}
 .color-dbb{color:#27272a;}
 
+.color-red{color:#ed0202;}
+
 /*--------*/
 
 
@@ -221,7 +223,7 @@ Mobile style's
 	.grid-800px,.grid-2{width:calc(100% - 16px);margin:0 8px;}
 	
 	footer .logo{float:none;margin-right:0;margin-bottom:20px;display:block;}
-	footer .sns{float:none;display:block;margin-bottom:20px;}
+	footer .sns{float:none;display:block;}
 	footer .footer-menu{float:none;display:block;}
 	footer .footer-menu a{margin-bottom:10px;}
 	footer .copyright{float:none;display:block;margin-bottom:20px;}

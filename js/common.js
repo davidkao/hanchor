@@ -1,5 +1,9 @@
 $(document).ready(function(){
 	
+});
+
+
+$(window).load(function() {
 	
 	$('select').niceSelect();
 	
@@ -41,10 +45,6 @@ $(document).ready(function(){
 	}).scroll();
 	
 	
-	//visual_center
-	$('.v-centerimg').centerImage();
-	$('.v-centerimg-is').centerImage('inside');
-	
 	//login bg get height
 	$('.login-bg').height($(".index-content").height());
 	
@@ -75,10 +75,15 @@ $(document).ready(function(){
     });
 	
 	
+	//visual_center
+	$('.v-centerimg').centerImage();
+	$('.v-centerimg-is').centerImage('inside');
+	
+	
 	$(window).resize(function() {
+		$('.login-bg').height($(".index-content").height());
 		$('.v-centerimg').centerImage();
 		$('.v-centerimg-is').centerImage('inside');
-		$('.login-bg').height($(".index-content").height());
 		
 		if ($(window).width() < 768) {
 			$('.tab').addClass('rwd-tab');
@@ -88,5 +93,27 @@ $(document).ready(function(){
 		}
 		
 	});
+	
+	
+	// Tooltip only Text
+	$('.masterTooltip .label-radio').hover(function(){
+			// Hover over code
+			var title = $(this).attr('title');
+			$(this).data('tipText', title).removeAttr('title');
+			$('<p class="tooltip"></p>')
+			.text(title)
+			.appendTo('body')
+			.fadeIn('slow');
+	}, function() {
+			// Hover out code
+			$(this).attr('title', $(this).data('tipText'));
+			$('.tooltip').remove();
+	}).mousemove(function(e) {
+			var mousex = e.pageX + 20; //Get X coordinates
+			var mousey = e.pageY + 10; //Get Y coordinates
+			$('.tooltip')
+			.css({ top: mousey, left: mousex })
+	});
+	
 	
 });

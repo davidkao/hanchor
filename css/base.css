@@ -88,6 +88,7 @@ height: 0;
 .color-gray-666{color:#666;}
 .color-gray-999{color:#999;}
 .color-gray-ddd{color:#ddd;}
+.text-del{text-decoration:line-through;}
 
 /*margin*/
 .mg-t-0{margin-top:0px;}.mg-t-2{margin-top:2px;}.mg-t-5{margin-top:5px;}.mg-t-7{margin-top:7px;}.mg-t-10{margin-top:10px;}.mg-t-12{margin-top:12px;}.mg-t-15{margin-top:15px;}.mg-t-17{margin-top:17px;}.mg-t-20{margin-top:20px;}.mg-t-22{margin-top:22px;}.mg-t-25{margin-top:25px;}.mg-t-27{margin-top:27px;}.mg-t-30{margin-top:30px;}.mg-t-32{margin-top:32px;}.mg-t-35{margin-top:35px;}.mg-t-37{margin-top:37px;}.mg-t-40{margin-top:40px;}.mg-t-42{margin-top:42px;}.mg-t-45{margin-top:45px;}.mg-t-47{margin-top:47px;}.mg-t-50{margin-top:50px}.mg-t-55{margin-top:55px;}.mg-t-60{margin-top:60px;}.mg-t-80{margin-top:80px;}
