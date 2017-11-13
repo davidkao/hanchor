@@ -268,7 +268,7 @@
 }
 
 @media screen and (min-width: 1200px){
-	.tab-con .tab-inner{display:none;max-height:325px;overflow-x: scroll;overflow-y: hidden;}
+	.tab-con .tab-inner{display:none;max-height:325px;overflow-x: hidden;overflow-y: scroll;}
 	.tab-con .tab-inner.tab-inner-article{max-height:none;}
 }
 
@@ -310,7 +310,7 @@
 	.member-sec .order-table tr td:after{content:'';position:absolute;width:1px;height:24px;background:#ddd;left:86px;top:15px;display:block;}
 	.member-sec .order-table tr td:nth-child(1):after{top:30px;}
 	
-	.tab-con .tab-inner{display:none;max-height:325px;overflow-x: scroll;overflow-y:hidden;}
+	.tab-con .tab-inner{display:none;max-height:325px;overflow-x: hidden;overflow-y:scroll;}
 	.tab-con .tab-inner.tab-inner-article{max-height:none;}
 	
 	.grid-3-1.about-partner{width: calc(50% - 20px);height:300px;}
