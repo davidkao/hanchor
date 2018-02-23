@@ -146,6 +146,8 @@ footer .mailto{float:right;}
 .page-menu .page:hover, .page-menu ul li.active{background: #1f60cb;}
 .page-menu .page:hover a, .page-menu ul li.active a{color:#fff;}
 
+.visual-link{width:100%;height:100%;display:block;position:relative;}
+
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
 Mobile style's
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
