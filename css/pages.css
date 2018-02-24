@@ -94,6 +94,7 @@
 
 .product-info .name{font-size:24px;line-height:38px;color:#111;font-weight: bold;}
 .product-info .price{font-size:20px;color:#3b84fb;line-height:24px;}
+.product-info .price.color-gray-999{color:#999;}
 .product-info .line{width:100%;height:1px;background:#ddd;}
 .product-info .form-section .sel-color{display:inline-block;vertical-align:top;margin-right:30px;}
 .product-info .form-section .sel-color h3{font-size:15px;color:#333;font-weight:bold;margin-bottom:12px;}
