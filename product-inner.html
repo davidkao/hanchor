@@ -32,6 +32,7 @@
 	<link rel="stylesheet" href="css/flexslider.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/css-stars.css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	
 </head>
@@ -396,9 +397,102 @@
 							容內容內器內，容內容內器內容內容，內器內容內容文字編輯器內容，文字編輯器內容內容內容，文字編輯器內容內容內器內，容內容內器內容內容，內器內容內容文字編輯器內容，文字編輯器內容內容內容，文字編輯器內容內容內器內，容內容內器內容內容，內器內容內容文字編輯器內容，文字編輯器內容內容內容，文字編輯器內容內容內器內，容內容內器內容內容，內器內容內容文字編輯器內容，文字編輯器內容內容內容，文字編輯器內容內容內器內，容內容內器內容內容，內器內容內容文字編容內容內器內，容內容內器內容內容，內器內容內容文字編輯器內容，文字編輯器內容內容內容，文字編輯器內容內容內器內，容內容內器內容內容，內器內容內容文字編輯器內容，文字編輯器內容內容內容，文字編輯器內容內容內器內，容內容內器內容內容，內器內容內容文字編輯器內容，文字編輯器內容內容內容，文字編輯器內容內容內器內，容內容內器內容內容，內器內容內容文字編輯器內容，文字編輯器內容內容內容，文字編輯器內容內容內器內，容內容內器內容內容，內器內容內容文字編
 						</div>
 
-						<p class="pruduct-preview tab-inner tab-2">
-							測試測文拉拉字文字 。
-						</p>
+						<!--rating-->
+						<div class="product-desc tab-inner tab-inner-article tab-2 active">
+							
+							<!--rating and comment-->
+							<div>
+							
+								<!--rating upper -->
+								<div class="rt-upper flex-sec mg-b-10">
+									<div class="pic flex-2"><img src="images/tmp/item-1.jpg" alt="" /></div>
+									<div class="con flex-2">
+										<h2 class="name mg-v-10">PIPE - T1 多功能防水後背包</h2>
+
+										<div class="stars stars-example-css stars-lb mg-b-20 inlineblock mg-r-10">
+											<p class="text-13 color-gray-666 lh-30">平均 <span class="text-20 bold color-lb">4.6</span> 分</p>
+											<select class="star-sel-rdly" name="rating" data-current-rating="4.4" autocomplete="off">
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+											</select>
+										</div>
+										
+										<div class="stars stars-example-css mg-b-10 inlineblock">
+											<p class="text-13 color-gray-666 lh-30">你的評分</p>
+											<select class="star-sel" name="rating" autocomplete="off">
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+											</select>
+										</div>
+
+
+									</div>
+
+								</div>
+								<!--rating upper -->
+							
+								<!--comment -->
+								<textarea class="rt-textarea mg-b-10" placeholder="寫下評論"></textarea>
+								<!--comment -->
+								
+								<button class="btn-m btn-blue inlineblock-imp mg-b-10" hov="0.75">送出</button>
+							
+							</div>
+							<!--rating and comment-->
+							
+							
+							<!--one other rating/comment-->
+							<div class="one-rt-common">
+								<div>
+									<h2 class="name">Blablabla Chen</h2>
+									
+									<div class="stars stars-example-css mg-b-10">
+										<select class="star-sel-fixed" name="rating" autocomplete="off">
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4" selected>4</option>
+											<option value="5">5</option>
+										</select>
+									</div>
+									
+									<p class="comment">好用給推，好用給給推好用給推好用給推好用給推，好用給文字文字文字推，好用給用給推，好用給推</p>
+									
+								</div>
+								
+							</div>
+							<!--one other rating/comment-->
+							
+							<!--one other rating/comment-->
+							<div class="one-rt-common">
+								<div>
+									<h2 class="name">DDDD LIU</h2>
+									
+									<div class="stars stars-example-css mg-b-10">
+										<select class="star-sel-fixed" name="rating" autocomplete="off">
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5" selected>5</option>
+										</select>
+									</div>
+									
+									<p class="comment">好用給推，好用給給推好用給推好用給推好用給推，好用給文字文字文字推，好用給用給推，好用給推</p>
+									
+								</div>
+								
+							</div>
+							<!--one other rating/comment-->
+							
+						</div>
+						<!--rating-->
 
 					</div>
 
@@ -522,6 +616,7 @@
 <script src="js/radiob.js"></script>
 <script src="js/jquery.nice-select.js"></script>
 <script src="js/megamenu.js"></script>
+<script src="js/jquery.barrating.js"></script>
 <script src="js/common.js"></script>
 
 <script>
@@ -533,6 +628,27 @@
 	  controls:true
 	});
 	//nextSelector: '#slider-next',prevSelector: '#slider-prev'
+	
+	$('.star-sel').barrating({
+		theme: 'fontawesome-stars',
+		showSelectedRating: false
+	});
+	
+	$('.star-sel-fixed').barrating({
+		theme: 'fontawesome-stars',
+		showSelectedRating: false,
+		readonly: true
+	});
+	
+	var currentRating = $('.star-sel-rdly').data('current-rating');
+	
+	$('.star-sel-rdly').barrating({
+		theme: 'fontawesome-stars-o',
+		showSelectedRating: false,
+		initialRating: currentRating,
+		readonly: true,
+		
+	});
 	
 </script>
 
