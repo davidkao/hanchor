@@ -1,10 +1,13 @@
 $(document).ready(function(){
 	
 });
+//<div class='loading relative'><div class='loading_animation cenmid'><img src='images/common/loading.gif' alt='' /></div></div>
 
+$('body').append("<div class='loading relative'><div class='loading_animation cenmid'><img src='images/common/loading.gif' alt='' /></div></div>");	
 
-$(window).load(function() {
-	
+$(window).load(function() {	
+	$('.loading').delay(260).fadeTo(300,0,function() {$(this).hide();});
+
 	$('select').niceSelect();
 	
 	//hover function

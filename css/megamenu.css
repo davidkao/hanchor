@@ -45,7 +45,7 @@ Screen style's
 .menu .layer-1,.login-signup .layer-1{
     text-decoration: none;
     display: block;
-	font-size:14px;color:#fff;font-weight:normal;height:95px;padding: 0 30px;line-height:95px;
+	font-size:14px;color:#fff;font-weight:normal;height:74px;padding: 0 30px;line-height:74px;
 	transition:0.22s;
 	position:relative;
 }
@@ -71,13 +71,11 @@ Screen style's
 	box-sizing: border-box;
 }
 
-.login-signup .layer-1.scart{}
 .login-signup .layer-1.scart img{display:inline-block;vertical-align: middle;margin-right:6px;margin-top:-4px;width:24px;}
 .login-signup .layer-1.scart h2{background:#1d3866;color:#fff;vertical-align: middle;display:inline-block;transition:0.2s;line-height:25px;width:25px;height:25px;text-align:center;}
 .login-signup .layer-1.scart:hover{background:#151515;}
 .login-signup .layer-1.scart:hover h2{color:#fff;background:#1f60cb;}
 
-.login-signup .layer-1.member{}
 .login-signup .layer-1.member .pic{width:40px;height:40px;overflow:hidden;border-radius: 20px;margin-right:8px;transition:0.22s;}
 .login-signup .layer-1.member .name{font-size:14px;color:#9b9b9b;position:relative;margin-right:24px;transition:0.22s;}
 .login-signup .layer-1.member .name:after{
@@ -97,7 +95,6 @@ Screen style's
 	border-top:none;
 }
 
-.login-signup .layer-1.member:hover .pic{}
 .login-signup .layer-1.member:hover .name{color:#2275d7;}
 .login-signup .layer-1.member:hover .name:after{border-top-color:#2275d7;}
 .login-signup .layer-1.member:hover .name.close:after{border-bottom-color:#2275d7;}
@@ -153,7 +150,6 @@ Screen style's
 
 .menu .layer-2 .ico{margin-bottom:10px;}
 
-.menu .layer-2-adj{}
 
 .menu ul.layer-3-ul {
     display: block;
@@ -202,11 +198,11 @@ Mobile style's
 
 
 @media screen and (min-width: 1200px) {
-	header .fixarea .fxarea-rwd{width:1160px;margin:0 auto;display:block;height:94px;padding:0 20px;}
-	.layer-1-li .menu-line:after{content:"";position:absolute;background:url(../images/common/menu-line.jpg) no-repeat;display:block;width:1px;height:95px;top:0;right:0;}
+	header .fixarea .fxarea-rwd{width:1160px;margin:0 auto;display:block;height:74px;padding:0 20px;}
+	.layer-1-li .menu-line:after{content:"";position:absolute;background:url(../images/common/menu-line.jpg) no-repeat;display:block;width:1px;height:74px;top:0;right:0;}
 	.layer-1-li:nth-last-child(1) .menu-line:after{display:none;}
 	.menu .layer-2-adj{width:1200px;margin:0 auto;}
-	.menu ul.layer-2-ul{width:100%;top:95px;background:#0d0d0e;border-bottom:none;}
+	.menu ul.layer-2-ul{width:100%;top:74px;background:#0d0d0e;border-bottom:none;}
 	.menu .layer-3:hover h4{color:#3b84fb;background:#000;}
 	
 	
@@ -225,13 +221,13 @@ Mobile style's
     .menu-mobile {
 		float:right;
         display: block;
-		height:95px;
+		height:74px;
 		cursor:pointer;
 		position:relative;
     }
 	.menu-mobile:after {
 		width:100px;
-		height:95px;
+		height:74px;
 		content: "";
 		background:url(../images/common/menu.png) no-repeat center center;
 		display:block;
@@ -242,13 +238,13 @@ Mobile style's
 	
 	.menu-mobile.close:after {
 		width:100px;
-		height:95px;
+		height:74px;
 		content: "";
 		background:url(../images/common/menu-close.png) no-repeat center center;
 		display:block;
 		position:absolute;
 		right:0;
-		top:;
+		top:0;
 	}
 	
     .menu-dropdown-icon:before {
@@ -317,7 +313,7 @@ Mobile style's
 		position:absolute;
 		background:#fff;
 		right:0;
-		top:121px;
+		top:100px;
 		border-bottom:1px #bbb solid;
     }
 }
